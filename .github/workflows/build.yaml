@@ -58,7 +58,10 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          labels: branch=${{env.TAG}},commit=${{env.COMMIT_SHA}},repository=https://github.com/${{env.IMAGE_REPOSITORY}}
+          labels: |
+            branch=${{env.TAG}}
+            commit=${{env.COMMIT_SHA}}
+            repository=https://github.com/${{env.IMAGE_REPOSITORY}}
           file: Dockerfile
           push: true
           tags: ${{env.REGISTRY_URL}}/${{env.IMAGE_TAG}}
