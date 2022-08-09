@@ -24,8 +24,8 @@ jobs:
           #echo "REGISTRY_URL=XXXXXX.dkr.ecr.us-east-1.amazonaws.com"
           echo "REGISTRY_URL=docker.io" >> ${GITHUB_ENV}
           echo "REGISTRY_URL=docker.io"
-          echo "IMAGE_TAG=weniai/ipsec_exporter:${TAG}" >> ${GITHUB_ENV}
-          echo "IMAGE_TAG=weniai/ipsec_exporter:${TAG}"
+          echo "IMAGE_TAG=weniai/ipsec_exporter:${VERSION}" >> ${GITHUB_ENV}
+          echo "IMAGE_TAG=weniai/ipsec_exporter:${VERSION}"
           echo "IMAGE_REPOSITORY=weni-ai/ipsec_exporter" >> ${GITHUB_ENV}
           echo "IMAGE_REPOSITORY=weni-ai/ipsec_exporter"
 
